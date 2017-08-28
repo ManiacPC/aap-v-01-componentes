@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cl.inacap.componentes2.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/tvToggleButton"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tBtnTest"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="30dp" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tBtnTest"
+        android:layout_alignBaseline="@+id/tvToggleButton"
+        android:layout_alignBottom="@+id/tvToggleButton"
+        android:layout_alignParentStart="true"
+        android:onClick="verificarToggleButton"
+        />
+
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tBtnTest"
+        android:layout_marginTop="12dp"
+        android:id="@+id/cbTest"
+        android:layout_toStartOf="@+id/tvToggleButton"
+        android:onClick="verificarCheckBox"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbTest"
+        >
+        <RadioButton
+            android:text="RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbTest1"
+            android:layout_below="@+id/cbTest"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="35dp"
+            android:onClick="verificarRadioButton"
+            />
+
+        <RadioButton
+            android:text="RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rbTest1"
+            android:layout_alignParentStart="true"
+            android:id="@+id/rbTest2"
+            android:onClick="verificarRadioButton"
+            />
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/tvCheckbox"
+        android:layout_alignBaseline="@+id/cbTest"
+        android:layout_alignBottom="@+id/cbTest"
+        android:layout_alignStart="@+id/tvToggleButton"
+        android:layout_below="@+id/cbTest"/>
+
+    <Switch
+        android:text="Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCheckbox"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp"
+        android:id="@+id/swTest" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/tvRadioButton"
+        android:layout_below="@+id/swTest"
+        android:layout_toEndOf="@+id/tvCheckbox"
+        android:layout_marginStart="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/tvSwitch"
+        android:layout_alignTop="@+id/swTest"
+        android:layout_toEndOf="@+id/tvCheckbox" />
+</RelativeLayout>
